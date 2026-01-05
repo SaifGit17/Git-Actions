@@ -1,0 +1,19 @@
+name: My 1st CI/CD Pipeline
+
+on:
+    push:
+        branches:
+            - main
+            - dev
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    Read-the-txt-file:
+        runs-on: ubuntu-latest
+        steps:
+            - name: clone the repo from the GitHub
+              uses: actions/checkout@v4
+            - name: Read the file.
+              run: cat gitactions.txt
