@@ -23,3 +23,5 @@ jobs:
               run: sudo apt install nginx -y
             - name: Check the Nginx version
               run: nginx -v
+            - name: See the hostname
+              run: hostnamectl
