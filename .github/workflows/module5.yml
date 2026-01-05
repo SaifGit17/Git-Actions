@@ -18,7 +18,7 @@ jobs:
             - name: Read the file.
               run: cat gitactions.txt
             - name: Update and upgarde the local repo.
-              run: sudo apt update && upgrade
+              run: sudo apt update && upgrade -y
             - name: Install the Nginx
               run: sudo apt install nginx -y
             - name: Check the Nginx version
