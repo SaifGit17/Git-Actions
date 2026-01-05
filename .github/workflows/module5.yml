@@ -17,3 +17,9 @@ jobs:
               uses: actions/checkout@v4
             - name: Read the file.
               run: cat gitactions.txt
+            - name: Update and upgarde the local repo.
+              run: sudo apt update && updrade
+            - name: Install the Nginx
+              run: sudo apt install nginx -y
+            - name: Check the Nginx version
+              run: nginx -v
